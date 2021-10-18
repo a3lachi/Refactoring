@@ -135,13 +135,22 @@ class GildedRoseTest {
 
   @Test
   @DisplayName("Test that Backstage passes's quality adds 3 with time when 5 days or less are left")
-  void testBackstagePassesQuality3() {
+  void testBackstagePassesQuality31() {
     Item element = new Item("Backstage passes to a TAFKAL80ETC concert", 5, 4);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
     assertThat(element.quality,equalTo(7));
     app.updateQuality();
     assertThat(element.quality,equalTo(10));
+  }
+
+  @Test
+  @DisplayName("Test that Backstage passes's quality adds 3 with time when 5 days or less are left part 2")
+  void testBackstagePassesQuality32() {
+    Item element = new Item("Backstage passes to a TAFKAL80ETC concert", 6, 4);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality,equalTo(6));
   }
 
   @Test
