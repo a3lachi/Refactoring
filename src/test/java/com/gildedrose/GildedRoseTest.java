@@ -35,7 +35,7 @@ class GildedRoseTest {
   }
 
 
-  // Tester la qualité aprés la date de péremption et verifier qu'elle se egrade deux fois plus
+  // Tester la qualité aprés la date de péremption et verifier qu'elle se degrade deux fois plus
   @Test
   @DisplayName("Test that quality gets updated after end date twice the speed")
   void testQualityAfterEnddate() {
@@ -109,18 +109,28 @@ class GildedRoseTest {
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
     assertThat(element.quality,greaterThan(4));
-
   }
+
+  
 
   @Test
   @DisplayName("Test that Backstage passes's quality adds 2 with time when 10 days or less are left")
-  void testBackstagePassesQuality2() {
+  void testBackstagePassesQuality21() {
     Item element = new Item("Backstage passes to a TAFKAL80ETC concert", 10, 4);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
     assertThat(element.quality,equalTo(6));
     app.updateQuality();
     assertThat(element.quality,equalTo(8));
+  }
+
+  @Test
+  @DisplayName("Test that Backstage passes's quality adds 2 with time when 10 days or less are left . part 2")
+  void testBackstagePassesQuality22() {
+    Item element = new Item("Backstage passes to a TAFKAL80ETC concert", 11, 9);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality,equalTo(10));
   }
 
   @Test

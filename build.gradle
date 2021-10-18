@@ -4,6 +4,13 @@ plugins {
     id 'checkstyle'
     id 'pmd'
     id 'com.github.spotbugs' version '4.7.5'
+    id 'info.solidsoft.pitest' version '1.7.0'
+
+}
+
+pitest {
+    //adds dependency to org.pitest:pitest-junit5-plugin and sets "testPlugin" to "junit5"
+    junit5PluginVersion = '0.12'
 }
 
 group = 'com.gildedrose'
