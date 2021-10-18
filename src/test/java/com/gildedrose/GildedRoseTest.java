@@ -81,4 +81,15 @@ class GildedRoseTest {
     assertThat(element.quality,equalTo(50));
   }
 
+
+  @Test
+  @DisplayName("Test on Sulfuras quality unchanged with date")
+  void testSulfurasQuality() {
+    Item element = new Item("Sulfuras, Hand of Ragnaros", 1, 12);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality,equalTo(12));
+
+  }
+
 }
