@@ -15,6 +15,14 @@ class GildedRoseTest {
     assertThat(element.name, is("foo"));
   }
 
+  @Test
+  @DisplayName("Test that date gets updated")
+  void testDateUpdated() {
+    Item element = new Item("foo", 5, 2);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.sellIn,equalTo(4));
+  }
 
 
 
