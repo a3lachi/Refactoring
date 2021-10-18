@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2021-10-14T14:14:35" hostname="Flextorium.local" time="0.023">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2021-10-18T02:08:14" hostname="Flextorium.local" time="0.023">
   <properties/>
-  <testcase name="Test that quality gets updated after end date" classname="com.gildedrose.GildedRoseTest" time="0.011"/>
+  <testcase name="Test that quality gets updated after end date twice the speed" classname="com.gildedrose.GildedRoseTest" time="0.011"/>
   <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test quality top is 50" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that quality gets updated" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that date gets updated" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test that quality is and stays positive" classname="com.gildedrose.GildedRoseTest" time="0.004"/>
-  <testcase name="Test on Sulfuras quality unchanged with date" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test that Backstage passes's quality adds with time" classname="com.gildedrose.GildedRoseTest" time="0.004"/>
+  <testcase name="Test that quality is and stays positive" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test on Sulfuras quality unchanged with date" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that Aged Brie's quality adds with time" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
