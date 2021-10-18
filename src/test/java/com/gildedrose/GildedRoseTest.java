@@ -92,6 +92,15 @@ class GildedRoseTest {
 
   }
 
+  @Test
+  @DisplayName("Test that Sulfuras have no resumption date")
+  void testSulfurasResumptionDate() {
+    Item element = new Item("Sulfuras, Hand of Ragnaros", 3, 12);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.sellIn,equalTo(3));
+
+  }
 
   @Test
   @DisplayName("Test that Backstage passes's quality adds with time")
