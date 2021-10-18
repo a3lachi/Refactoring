@@ -103,4 +103,15 @@ class GildedRoseTest {
 
   }
 
+  @Test
+  @DisplayName("Test that Backstage passes's quality adds 2 with time when 10 days or less are left")
+  void testBackstagePassesQuality2() {
+    Item element = new Item("Backstage passes to a TAFKAL80ETC concert", 10, 4);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality,equalTo(6));
+    app.updateQuality();
+    assertThat(element.quality,equalTo(8));
+  }
+
 }
