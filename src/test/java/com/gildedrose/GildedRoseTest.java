@@ -59,6 +59,15 @@ class GildedRoseTest {
     assertThat(element.quality,greaterThanOrEqualTo(0));
   }
 
+  
+  @Test
+  @DisplayName("Test that Aged Brie's quality adds with time")
+  void testAgedBrieQuality() {
+    Item element = new Item("Aged Brie", 5, 4);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality,greaterThan(4));
 
+  }
 
 }
