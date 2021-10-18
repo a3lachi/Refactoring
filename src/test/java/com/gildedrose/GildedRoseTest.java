@@ -35,6 +35,17 @@ class GildedRoseTest {
   }
 
 
+  // Tester la qualité aprés la date de péremption et verifier qu'elle se egrade deux fois plus
+  @Test
+  @DisplayName("Test that quality gets updated after end date twice the speed")
+  void testQualityAfterEnddate() {
+    Item element = new Item("foo", 1, 8);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    // date = 0 , quality = 7
+    app.updateQuality();
+    assertThat(element.quality,equalTo(5));
+  }
 
 
 
