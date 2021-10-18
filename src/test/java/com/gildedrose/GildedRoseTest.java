@@ -25,6 +25,14 @@ class GildedRoseTest {
   }
 
 
+  @Test
+  @DisplayName("Test that quality gets updated")
+  void testQualityUpdated() {
+    Item element = new Item("foo", 5, 2);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality,equalTo(1));
+  }
 
 
 
