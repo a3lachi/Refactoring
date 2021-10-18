@@ -48,6 +48,17 @@ class GildedRoseTest {
   }
 
 
+  @Test
+  @DisplayName("Test that quality is and stays positive")
+  void testPositive() {
+    Item element = new Item("foo", 5, 1);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality,greaterThanOrEqualTo(0));
+    app.updateQuality();
+    assertThat(element.quality,greaterThanOrEqualTo(0));
+  }
+
 
 
 }
