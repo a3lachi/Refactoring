@@ -125,4 +125,15 @@ class GildedRoseTest {
     assertThat(element.quality,equalTo(10));
   }
 
+  @Test
+  @DisplayName("Test that Backstage passes's quality lowers to 0 after concert date")
+  void testBackstagePassesQuality4() {
+    Item element = new Item("Backstage passes to a TAFKAL80ETC concert", 0, 4);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality,equalTo(0));
+
+  }
+
+
 }
