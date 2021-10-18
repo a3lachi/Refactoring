@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.gildedrose.GildedRoseTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2021-10-18T02:25:33" hostname="Flextorium.local" time="0.025">
+<testsuite name="com.gildedrose.GildedRoseTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2021-10-18T02:40:30" hostname="Flextorium.local" time="0.023">
   <properties/>
   <testcase name="Test that quality gets updated after end date twice the speed" classname="com.gildedrose.GildedRoseTest" time="0.01"/>
   <testcase name="Test that the name is unchanged" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that quality of Conjured lowers by 2 with time" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
   <testcase name="Test that Sulfuras have no resumption date" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test quality top is 50" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="Test that quality gets updated" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test that date gets updated" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
-  <testcase name="Test that Backstage passes's quality adds with time" classname="com.gildedrose.GildedRoseTest" time="0.004"/>
-  <testcase name="Test that Backstage passes's quality adds 2 with time when 10 days or less are left" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that quality gets updated" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
+  <testcase name="Test that date gets updated" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that Backstage passes's quality adds with time" classname="com.gildedrose.GildedRoseTest" time="0.003"/>
+  <testcase name="Test that Backstage passes's quality adds 2 with time when 10 days or less are left" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test that Backstage passes's quality adds 3 with time when 5 days or less are left" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
-  <testcase name="Test that Backstage passes's quality lowers to 0 after concert date" classname="com.gildedrose.GildedRoseTest" time="0.001"/>
+  <testcase name="Test that Backstage passes's quality lowers to 0 after concert date" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test that quality is and stays positive" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test on Sulfuras quality unchanged with date" classname="com.gildedrose.GildedRoseTest" time="0.0"/>
   <testcase name="Test that Aged Brie's quality adds with time" classname="com.gildedrose.GildedRoseTest" time="0.0"/>

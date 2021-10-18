@@ -85,17 +85,17 @@ class GildedRoseTest {
   @Test
   @DisplayName("Test on Sulfuras quality unchanged with date")
   void testSulfurasQuality() {
-    Item element = new Item("Sulfuras, Hand of Ragnaros", 1, 12);
+    Item element = new Item("Sulfuras, Hand of Ragnaros", 1, 80);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
-    assertThat(element.quality,equalTo(12));
+    assertThat(element.quality,equalTo(80));
 
   }
 
   @Test
   @DisplayName("Test that Sulfuras have no resumption date")
   void testSulfurasResumptionDate() {
-    Item element = new Item("Sulfuras, Hand of Ragnaros", 3, 12);
+    Item element = new Item("Sulfuras, Hand of Ragnaros", 3, 80);
     GildedRose app = new GildedRose(new Item[] {element});
     app.updateQuality();
     assertThat(element.sellIn,equalTo(3));
@@ -144,5 +144,13 @@ class GildedRoseTest {
 
   }
 
+  @Test
+  @DisplayName("Test that quality of Conjured lowers by 2 with time")
+  void testConjuredQuality() {
+    Item element = new Item("Conjured Mana Cake", 5, 49);
+    GildedRose app = new GildedRose(new Item[] {element});
+    app.updateQuality();
+    assertThat(element.quality,equalTo(47));
+  }
 
 }
